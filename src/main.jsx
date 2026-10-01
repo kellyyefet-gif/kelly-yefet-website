@@ -1,5 +1,5 @@
 import React from 'react';import{createRoot}from'react-dom/client';import{ArrowUpRight}from'lucide-react';import'./style.css';
-const Work=({n,kicker,title,body,stat})=><article className="work"><div className="num">{n}</div><div><p className="eyebrow">{kicker}</p><h3>{title}</h3><p>{body}</p>{stat&&<p className="stat">{stat}</p>}</div><ArrowUpRight size={25}/></article>;
+const Work=({n,kicker,title,body,stat})=><article className="work"><div className="num">{n}</div><div><p className="eyebrow">{kicker}</p><h3>{title}</h3><p>{body}</p>{stat&&<p className="stat">{stat}</p>}</div></article>;
 const Offer=({n,title,forWho,body,items,href})=><article className="offer"><div className="offer-top"><span>{n}</span><p>{forWho}</p></div><h3>{title}</h3><p>{body}</p><div className="offer-list">{items.map(x=><span key={x}>↳ {x}</span>)}</div><a className="text-link" href={href}>Explore this engagement <ArrowUpRight size={16}/></a></article>;
 function App(){return <main>
 <nav><a className="brand" href="#">KELLY YEFET</a><div><a href="#work">Work</a><a href="#ways">Ways to work together</a><a href="#about">About</a><a href="#contact">Contact</a></div></nav>
